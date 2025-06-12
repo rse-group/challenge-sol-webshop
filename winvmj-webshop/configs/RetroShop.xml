@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="webshop"/>
+	<feature automatic="selected" name="Seller"/>
+	<feature automatic="selected" name="Customer"/>
+	<feature automatic="selected" name="Address"/>
+	<feature name="CityOnly"/>
+	<feature automatic="selected" name="Category"/>
+	<feature automatic="selected" name="Catalog"/>
+	<feature manual="selected" name="CatalogBrand"/>
+	<feature automatic="selected" name="Cart"/>
+	<feature automatic="selected" name="Order"/>
+	<feature name="OrderWithCancel"/>
+	<feature name="OrderUnauthorized"/>
+	<feature name="Shipping"/>
+	<feature name="InHouseDelivery"/>
+	<feature name="SelfPickup"/>
+	<feature name="ExternalCourier"/>
+	<feature name="Config"/>
+	<feature automatic="selected" name="PaymentOrder"/>
+	<feature manual="selected" name="CreditCard"/>
+	<feature name="EWallet"/>
+	<feature automatic="selected" manual="selected" name="PG.PaymentGateway"/>
+	<feature automatic="selected" name="PG.Payment"/>
+	<feature name="PG.EWallet"/>
+	<feature name="PG.FlipEWallet"/>
+	<feature name="PG.MidtransEWallet"/>
+	<feature name="PG.OyEWallet"/>
+	<feature manual="selected" name="PG.CreditCard"/>
+	<feature automatic="selected" name="PG.MidtransCreditCard"/>
+	<feature automatic="selected" name="PG.Vendor"/>
+	<feature name="PG.Flip"/>
+	<feature automatic="selected" name="PG.Midtrans"/>
+	<feature name="PG.Oy"/>
+	<feature name="PG.Xendit"/>
+</configuration>

@@ -1,0 +1,10 @@
+src/
+/bin/
+src-gen/
+modules-gen/
+bin-comp/
+db.properties
+modules-copy/
+.idea/
+.tmp_module_backup/
+services-def.json

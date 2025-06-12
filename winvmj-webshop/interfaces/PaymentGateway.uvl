@@ -1,0 +1,26 @@
+namespace PaymentGateway
+
+features
+	PaymentGateway {abstract true}
+		optional
+			Payment {abstract true}
+				optional
+					EWallet
+						or
+							FlipEWallet
+							MidtransEWallet
+							OyEWallet
+					CreditCard
+						mandatory
+							MidtransCreditCard
+			Vendor {abstract true}
+				or
+					Flip
+					Midtrans
+					Oy
+					Xendit
+
+constraints
+	OyEWallet => Oy
+	MidtransCreditCard | MidtransEWallet => Midtrans
+	FlipEWallet => Flip

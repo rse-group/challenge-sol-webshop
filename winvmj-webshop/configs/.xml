@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="webshop"/>
+	<feature name="User"/>
+	<feature name="Login"/>
+	<feature name="Logout"/>
+	<feature name="Register"/>
+	<feature name="PaymentOrder"/>
+	<feature name="PaymentGateaway"/>
+	<feature name="CreditCard"/>
+	<feature automatic="selected" name="Catalog"/>
+	<feature manual="selected" name="CatalogBrand"/>
+	<feature name="CatalogFilter"/>
+	<feature automatic="selected" name="CatalogItem"/>
+	<feature automatic="selected" name="CartItem"/>
+	<feature name="Checkout"/>
+	<feature name="Order"/>
+	<feature name="OrderItemWithoutLogin"/>
+	<feature name="OrderItemWithLogin"/>
+	<feature name="CancelOrder"/>
+	<feature name="OrderWithCityOnly"/>
+	<feature name="Product"/>
+	<feature name="EmailContact"/>
+	<feature name="Shipping"/>
+	<feature name="Marketing"/>
+	<feature name="Location"/>
+	<feature name="Recommendation"/>
+	<feature name="Audit"/>
+	<feature name="Currency"/>
+	<feature name="Customer"/>
+</configuration>
