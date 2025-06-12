@@ -1,0 +1,35 @@
+{
+  "services": [
+    {
+      "productName": "StansRobotCatalog",
+      "features":
+      [
+        "Category",
+        "Catalog"
+      ],
+      "disabledEndpoints": []
+    },
+    {
+      "productName": "StansRobotOrder",
+      "features":
+      [
+      	"Seller",
+        "Customer",
+        "Address",
+        "CityOnly",
+        "Cart",
+        "Order",
+        "Shipping",
+        "SelfPickup"
+      ],
+      "disabledEndpoints": []
+    },
+    {
+      "productName": "StansRobotPaymentOrder",
+      "features": [
+        "PaymentOrder", "CreditCard"
+      ],
+      "disabledEndpoints": []
+    }
+  ]
+}

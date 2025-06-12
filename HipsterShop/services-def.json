@@ -1,0 +1,36 @@
+{
+  "services": [
+    {
+      "productName": "HipsterShopCatalog",
+      "features":
+      [
+        "Category",
+        "Catalog"
+      ],
+      "disabledEndpoints": []
+    },
+    {
+      "productName": "HipsterShopOrder",
+      "features":
+      [
+        "Seller",
+        "Customer",
+        "Address",
+        "Cart",
+        "Order",
+        "OrderUnauthorized"
+      ],
+      "disabledEndpoints": []
+    },
+    {
+      "productName": "HipsterShopPaymentOrder",
+      "features": [
+        "PaymentOrder",
+        "CreditCard",
+        "Order",
+        "OrderUnauthorized"
+      ],
+      "disabledEndpoints": ["Order", "OrderUnauthorized"]
+    }
+  ]
+}

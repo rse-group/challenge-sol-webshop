@@ -1,0 +1,488 @@
+Order
+	tes1 Order Now Page
+	tes1 Order Page
+	tes1 Order Detail Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+Catalog
+	tes1 Catalog Page
+	tes1 Catalog Detail Page
+	tes1 Add Catalog Page
+	tes1 Edit Catalog Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+Category
+	tes1 Category Page
+	tes1 Add Category Page
+	tes1 Edit Category Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+Cart
+	tes1 Add to Cart Page
+	tes1 Cart Page
+	tes1 Edit Cart Item Page
+	tes1 Checkout Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+OrderHistory
+	tes1 Order History Page
+	tes1 Order History Detail Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+
+
+
+
+Address
+	tes1 Profile Page
+	tes1 Add Address Page
+	tes1 Edit Address Page
+	tes1 Address Detail Page
+	tes1 Edit Phone Number Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+OrderUnauthorized
+	tes1 Order Now Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+
+CartUnauthorized
+	tes1 Checkout Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+
+OrderHistoryAddress
+	tes1 Order History Detail Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+
+
+PaymentOrder
+	tes1 Payment Page
+	tes1 Order Detail Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
+CreditCardPG
+	tes1 Pay with Credit Card
+	tes1 Payment Page
+
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+	
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+/*
+	Generated on 31/05/2025 by UI Generator PRICES-IDE
+	https://amanah.cs.ui.ac.id/research/ifml-regen
+	version 3.11.1
+*/
+
+
+
+
+
