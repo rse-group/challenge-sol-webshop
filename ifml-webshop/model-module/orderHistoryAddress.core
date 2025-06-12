@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_OfUgMC-0EfCsrbfmSGxntA">
+  <interactionFlowModel id="_tqai4C-3EfCsrbfmSGxntA">
+    <interactionFlowModelElements xsi:type="dop-extension:DeltaModuleDefinition" id="_tqdmMC-3EfCsrbfmSGxntA" name="OrderHistoryAddress">
+      <annotations text="AddedFeature"/>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_SxfjMC-4EfCsrbfmSGxntA" name="Order History Detail Page">
+        <annotations text="/order-history/:orderId"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.16/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <viewElements xsi:type="dop-extension:AddedDetail" id="_nQMcAC-4EfCsrbfmSGxntA" name="Address Detail">
+          <parameters id="_TcWooC-5EfCsrbfmSGxntA" name="addressId" direction="inout"/>
+          <viewComponentParts xsi:type="dop-extension:AddedDataBinding" id="_XDJwMC-5EfCsrbfmSGxntA" name="Address Detail Data" uniformResourceIdentifier="call/address/detail">
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_1krY0C-5EfCsrbfmSGxntA" name="ZIP Code" featureConcept="//@domainModel/@domainElements.141"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_jx43MC-6EfCsrbfmSGxntA" name="Street" featureConcept="//@domainModel/@domainElements.142"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_n87UQC-6EfCsrbfmSGxntA" name="Subdistrict" featureConcept="//@domainModel/@domainElements.140"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_pXJPgC-6EfCsrbfmSGxntA" name="District" featureConcept="//@domainModel/@domainElements.139"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_rKIQEC-6EfCsrbfmSGxntA" name="City" featureConcept="//@domainModel/@domainElements.144"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_tViXsC-6EfCsrbfmSGxntA" name="Province" featureConcept="//@domainModel/@domainElements.136"/>
+          </viewComponentParts>
+        </viewElements>
+        <modifies href="orderHistory.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+      </interactionFlowModelElement>
+      <uses href="orderHistory.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_OfUgMS-0EfCsrbfmSGxntA">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofh7kC-0EfCsrbfmSGxntA" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_Q_RvkH-sEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfiioC-0EfCsrbfmSGxntA" name="status">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_dJzywH-sEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJsC-0EfCsrbfmSGxntA" name="orderId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_dJ22EH-sEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJsS-0EfCsrbfmSGxntA" name="date">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_fVJIQH-0Ee-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJsi-0EfCsrbfmSGxntA" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_nPr88H-0Ee-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJsy-0EfCsrbfmSGxntA" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_YnPzwI-VEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJtC-0EfCsrbfmSGxntA" name="addressimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_99cF8hOeEfCy54Q-qNcWMQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJtS-0EfCsrbfmSGxntA" name="saveOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_0srX4LT5Ee-s1I9rb4EuKg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJti-0EfCsrbfmSGxntA" name="paymentCreditCard">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_dQwsILVeEe-tr7w5FfNyJg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJty-0EfCsrbfmSGxntA" name="getOrderHistory">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_VLdXkLoBEe-ZeoVGY4VRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJuC-0EfCsrbfmSGxntA" name="calculateAmount">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_9SpnoMXuEe-_ZcUDMU2QsA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJuS-0EfCsrbfmSGxntA" name="placeInstantOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_yx9KMOu4Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJui-0EfCsrbfmSGxntA" name="addItem">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_YZ2tEOwQEe-ntOrFS_D59Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJuy-0EfCsrbfmSGxntA" name="removeItem">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_H_XbIOwREe-ntOrFS_D59Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJvC-0EfCsrbfmSGxntA" name="saveOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_aRxpkBalEfCXDORFUerO6A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfjJvS-0EfCsrbfmSGxntA" name="OrderItemImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_1KN0UOuzEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJvi-0EfCsrbfmSGxntA" name="orderItemId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_ClXx4Ou0Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJvy-0EfCsrbfmSGxntA" name="quantity">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_LQwNoOu0Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJwC-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_TFWyYuu0Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJwS-0EfCsrbfmSGxntA" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_eKpEwOu0Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJwi-0EfCsrbfmSGxntA" name="getSubtotal">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_ivgc0OwREe-ntOrFS_D59Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJwy-0EfCsrbfmSGxntA" name="saveOrderItem">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_lCxuABalEfCXDORFUerO6A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJxC-0EfCsrbfmSGxntA" name="saveOrderItemNow">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_Wm5d0BamEfCXDORFUerO6A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfjJxS-0EfCsrbfmSGxntA" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_jRlz4H-tEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJxi-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_Ezm3QLIdEe-2CLW4Lsh_4A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJxy-0EfCsrbfmSGxntA" name="cancelOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_kVfg4H-tEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfjJyC-0EfCsrbfmSGxntA" name="CustomerImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_HhEn4I-TEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJyS-0EfCsrbfmSGxntA" name="customerId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_URke4I-TEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJyi-0EfCsrbfmSGxntA" name="email">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_XvUYII-TEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJyy-0EfCsrbfmSGxntA" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#__As-gKYpEe-GHaRarKRURg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJzC-0EfCsrbfmSGxntA" name="phoneNumber">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_kamfwCQDEfC7kOkTjHTQQQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfjJzS-0EfCsrbfmSGxntA" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_PGHfsJAtEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJzi-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_AlHe8JAuEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJzy-0EfCsrbfmSGxntA" name="saveOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_RPcxcKYrEe-GHaRarKRURg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfjJ0C-0EfCsrbfmSGxntA" name="CatalogImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_QT8KUGq1Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJ0S-0EfCsrbfmSGxntA" name="brand">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_dzzowGq1Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjJ0i-0EfCsrbfmSGxntA" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_FhRAAmq3Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJ0y-0EfCsrbfmSGxntA" name="getCatalogByBrand">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_WlwdwHu4Ee-uWsWjoWAEWw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJ1C-0EfCsrbfmSGxntA" name="getBrands">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_1Lyy8Hu4Ee-uWsWjoWAEWw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfjJ1S-0EfCsrbfmSGxntA" name="getCatalogByBrandAndCategory">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_oWkQIHu8Ee-uWsWjoWAEWw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfjwwC-0EfCsrbfmSGxntA" name="CatalogImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_UvfzsGnFEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjwwS-0EfCsrbfmSGxntA" name="catalogId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_hyH8gGnFEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjwwi-0EfCsrbfmSGxntA" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_q-4nAGnFEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjwwy-0EfCsrbfmSGxntA" name="description">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_njRUYGnIEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjwxC-0EfCsrbfmSGxntA" name="price">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_1cZAUGnIEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjwxS-0EfCsrbfmSGxntA" name="pictureURL">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_5XZ1YGptEe-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjwxi-0EfCsrbfmSGxntA" name="availableStock">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_5MO1QGpvEe-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjwxy-0EfCsrbfmSGxntA" name="isDeleted">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_68UjYLXdEe-Vs_G3d3tiQw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjwyC-0EfCsrbfmSGxntA" name="sellerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_X2fWgsMtEe-ZD_wRGO_odg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjwyS-0EfCsrbfmSGxntA" name="categoryimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_6lZNAOX0Ee-kltJMbjv4Sw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjwyi-0EfCsrbfmSGxntA" name="getCatalogByName">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_EvHB8KywEe-JferhozfoYw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofjwyy-0EfCsrbfmSGxntA" name="SellerImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_SewnMK0QEe-wF5dBEYJxtg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjwzC-0EfCsrbfmSGxntA" name="sellerId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_CI-KALVfEe-tr7w5FfNyJg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfjwzS-0EfCsrbfmSGxntA" name="email">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_HuLfALVfEe-tr7w5FfNyJg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjwzi-0EfCsrbfmSGxntA" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_JmzNgLVfEe-tr7w5FfNyJg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofjwzy-0EfCsrbfmSGxntA" name="CategoryImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_lPD0gOXnEe-kltJMbjv4Sw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw0C-0EfCsrbfmSGxntA" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_CXKrwOXrEe-kltJMbjv4Sw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw0S-0EfCsrbfmSGxntA" name="categoryId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_7oEroOXsEe-kltJMbjv4Sw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofjw0i-0EfCsrbfmSGxntA" name="CartImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_zmubkOujEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw0y-0EfCsrbfmSGxntA" name="cartId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_9bazUOukEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw1C-0EfCsrbfmSGxntA" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_i0Er0uulEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw1S-0EfCsrbfmSGxntA" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_IXSJQOx8Ee-LgdcDmmRPnQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofjw1i-0EfCsrbfmSGxntA" name="CartItemImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_gJt3AOuoEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw1y-0EfCsrbfmSGxntA" name="cartItemId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_68rjMOuoEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw2C-0EfCsrbfmSGxntA" name="quantity">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_vAHOEOupEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw2S-0EfCsrbfmSGxntA" name="cartimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_13hKweupEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw2i-0EfCsrbfmSGxntA" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_BD8cUPFPEe-CqcsPG1gEgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw2y-0EfCsrbfmSGxntA" name="getSubtotal">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_L9CZ8Ou2Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw3C-0EfCsrbfmSGxntA" name="increaseQuantity">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_Nna4IOu2Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw3S-0EfCsrbfmSGxntA" name="decreaseQuantity">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_Ryi0wOu2Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw3i-0EfCsrbfmSGxntA" name="clearCart">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_5sk6UOu1Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw3y-0EfCsrbfmSGxntA" name="calculateTotal">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_BRuGwOu2Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw4C-0EfCsrbfmSGxntA" name="getStockStatus">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_yiJBAAG7EfCfvts2femLcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofjw4S-0EfCsrbfmSGxntA" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_EgTesH-yEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw4i-0EfCsrbfmSGxntA" name="email">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_w5l2sJAsEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw4y-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_CUXrcLCuEe-MF9Z8IziaYg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw5C-0EfCsrbfmSGxntA" name="getHistoryOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_SzDrULI2Ee-2CLW4Lsh_4A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofjw5S-0EfCsrbfmSGxntA" name="PaymentOrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_y-0W8McYEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofjw5i-0EfCsrbfmSGxntA" name="paymentmethodimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_SeNWAMcZEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofjw5y-0EfCsrbfmSGxntA" name="createPaymentOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_5MJb4McYEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofjw6C-0EfCsrbfmSGxntA" name="PaymentOrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_FYxw0McZEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX0C-0EfCsrbfmSGxntA" name="paymentmethodimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_WzU8IscZEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX0S-0EfCsrbfmSGxntA" name="createPaymentOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_Id5HoMcZEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfkX0i-0EfCsrbfmSGxntA" name="ShippingImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_8Sk88AZ0EfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX0y-0EfCsrbfmSGxntA" name="shippingId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_L7JFgCN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX1C-0EfCsrbfmSGxntA" name="courier">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_SaKXYCN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX1S-0EfCsrbfmSGxntA" name="service">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_VB5OoCN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX1i-0EfCsrbfmSGxntA" name="type">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_XznIUCN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX1y-0EfCsrbfmSGxntA" name="weight">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_bLd08CN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX2C-0EfCsrbfmSGxntA" name="shippingCost">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_e9xo8CN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX2S-0EfCsrbfmSGxntA" name="estimation">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_i2aucCN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX2i-0EfCsrbfmSGxntA" name="airwayBill">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_tavBwCN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX2y-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_KljWICN7EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfkX3C-0EfCsrbfmSGxntA" name="status">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_X5878CfPEfCStPzEYnidcw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX3S-0EfCsrbfmSGxntA" name="getShippingOption">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_445uMCN6EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX3i-0EfCsrbfmSGxntA" name="getProductEnv">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldwgbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX3y-0EfCsrbfmSGxntA" name="generateId">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldwwbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX4C-0EfCsrbfmSGxntA" name="gePropertiesReader">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldxAbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX4S-0EfCsrbfmSGxntA" name="getBuilder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldxQbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX4i-0EfCsrbfmSGxntA" name="processRequestMap">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldxgbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX4y-0EfCsrbfmSGxntA" name="toListMap">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldxwbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX5C-0EfCsrbfmSGxntA" name="getRequestString">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldyAbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfkX5S-0EfCsrbfmSGxntA" name="ConfigImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_zFldyQbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX5i-0EfCsrbfmSGxntA" name="getBuilder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldygbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX5y-0EfCsrbfmSGxntA" name="processRequestMap">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldywbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX6C-0EfCsrbfmSGxntA" name="generateId">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldzAbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX6S-0EfCsrbfmSGxntA" name="gePropertiesReader">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldzQbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX6i-0EfCsrbfmSGxntA" name="getProductEnv">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldzgbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX6y-0EfCsrbfmSGxntA" name="toListMap">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFldzwbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX7C-0EfCsrbfmSGxntA" name="getRequestString">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zFld0AbIEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_OfkX7S-0EfCsrbfmSGxntA" name="ConfigImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_clhGMCN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OfkX7i-0EfCsrbfmSGxntA" name="getProductEnv">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_qFLwUCN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-4C-0EfCsrbfmSGxntA" name="processRequestMap">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_unCK4CN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-4S-0EfCsrbfmSGxntA" name="generateId">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_xj6LsCN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-4i-0EfCsrbfmSGxntA" name="getPropertiesReader">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_zJuS8CN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-4y-0EfCsrbfmSGxntA" name="getBuilder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_4LarMCN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-5C-0EfCsrbfmSGxntA" name="ToListMap">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_5mwAwCN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-5S-0EfCsrbfmSGxntA" name="getRequestString">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_696A8CN8EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofk-5i-0EfCsrbfmSGxntA" name="RajaOngkirConfiguration">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_CV33kCN-EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-5y-0EfCsrbfmSGxntA" name="configimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_ci92kiN-EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-6C-0EfCsrbfmSGxntA" name="getSearchDomesticDestinationRequest">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_M9HjECN-EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_Ofk-6S-0EfCsrbfmSGxntA" name="getCalculateDomesticCostRequest">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_SdBhUCN-EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofk-6i-0EfCsrbfmSGxntA" name="RajaOngkir">
+      <classifier xsi:type="uml:Component" href="../webshop-uml-dop-6.uml#_hXc5QCN-EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofk-6y-0EfCsrbfmSGxntA" name="RajaOngkir">
+      <classifier xsi:type="uml:Component" href="../webshop-uml-dop-6.uml#_lby4cCN-EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofk-7C-0EfCsrbfmSGxntA" name="AddressImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_9qinsAZvEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-7S-0EfCsrbfmSGxntA" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_eTBgUAZxEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-7i-0EfCsrbfmSGxntA" name="addressId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_GEorQAbVEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-7y-0EfCsrbfmSGxntA" name="destinationId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_MZ7ZYAbVEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-8C-0EfCsrbfmSGxntA" name="isDeleted">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_5K518BOcEfCy54Q-qNcWMQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofk-8S-0EfCsrbfmSGxntA" name="ShippingImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_WqAPoCfSEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-8i-0EfCsrbfmSGxntA" name="shippingimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_mTXKISfSEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofk-8y-0EfCsrbfmSGxntA" name="ShippingImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_bxX8oCfTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-9C-0EfCsrbfmSGxntA" name="scheduledTime">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_hmze8CfTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-9S-0EfCsrbfmSGxntA" name="courierContact">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_oN6V0CfTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofk-9i-0EfCsrbfmSGxntA" name="shippingimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_tOxnoifTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofll8C-0EfCsrbfmSGxntA" name="AddressImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_An8jICfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll8S-0EfCsrbfmSGxntA" name="province">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_Crz4UCfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll8i-0EfCsrbfmSGxntA" name="addressimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_GknV4CfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll8y-0EfCsrbfmSGxntA" name="city">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_KiEp8CfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll9C-0EfCsrbfmSGxntA" name="district">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_OmloQCfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll9S-0EfCsrbfmSGxntA" name="subdistrict">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_Pa9EcCfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll9i-0EfCsrbfmSGxntA" name="zipcode">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_ZTM78CfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll9y-0EfCsrbfmSGxntA" name="street">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_aOqeoCfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofll-C-0EfCsrbfmSGxntA" name="AddressImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_wZeT8CfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll-S-0EfCsrbfmSGxntA" name="city">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_zLB1kCfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll-i-0EfCsrbfmSGxntA" name="addressimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_3VJsoCfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofll-y-0EfCsrbfmSGxntA" name="ShippingImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_0zxfkCfSEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll_C-0EfCsrbfmSGxntA" name="pickupTime">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_E7MPECfTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll_S-0EfCsrbfmSGxntA" name="shippingimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_vKZm0ifTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_Ofll_i-0EfCsrbfmSGxntA" name="pickupLocation">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#__CzC4CfTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_Ofll_y-0EfCsrbfmSGxntA" name="PaymentOrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop-6.uml#_QVju0McWEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmAC-0EfCsrbfmSGxntA" name="paymentId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_NDu8QMcXEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmAS-0EfCsrbfmSGxntA" name="paymentStatus">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_NDymoMcXEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmAi-0EfCsrbfmSGxntA" name="paymentOrderId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_NDz0wMcXEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmAy-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_g0r6EsceEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmBC-0EfCsrbfmSGxntA" name="paymentMethod">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_s_BI8MmPEe-5If8WuHxjiA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_OflmBS-0EfCsrbfmSGxntA" name="createPaymentOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop-6.uml#_yeHO4MmPEe-5If8WuHxjiA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmBi-0EfCsrbfmSGxntA" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_FhRABWq3Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmBy-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_YnQa0o-VEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmCC-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_AlJUIJAuEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmCS-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_CUYSgrCuEe-MF9Z8IziaYg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmCi-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_Ez7nYLIdEe-2CLW4Lsh_4A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmCy-0EfCsrbfmSGxntA" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_X2f9ksMtEe-ZD_wRGO_odg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmDC-0EfCsrbfmSGxntA" name="paymentmethodimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_SeN9EccZEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmDS-0EfCsrbfmSGxntA" name="paymentmethodimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_WzVjMscZEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OflmDi-0EfCsrbfmSGxntA" name="paymentmethodimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_g0tvQsceEe-UW_5Xg_Y-8Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNAC-0EfCsrbfmSGxntA" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_6lYl8uX0Ee-kltJMbjv4Sw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNAS-0EfCsrbfmSGxntA" name="cartimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_i0FS4uulEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNAi-0EfCsrbfmSGxntA" name="cartitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_13hx0eupEe-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNAy-0EfCsrbfmSGxntA" name="orderitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_TFacwOu0Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNBC-0EfCsrbfmSGxntA" name="orderitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_eKpEw-u0Ee-YM75pzP3YEQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNBS-0EfCsrbfmSGxntA" name="cartitemimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_BD_foPFPEe-CqcsPG1gEgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNBi-0EfCsrbfmSGxntA" name="addressimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_eTEjoAZxEfCvBYOPoawSgw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNBy-0EfCsrbfmSGxntA" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_99dUEBOeEfCy54Q-qNcWMQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNCC-0EfCsrbfmSGxntA" name="shippingimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_Klj9MSN7EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNCS-0EfCsrbfmSGxntA" name="rajaongkirconfiguration">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_cjCIACN-EfCKdfZKRgTdfg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNCi-0EfCsrbfmSGxntA" name="addressimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_GkokASfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNCy-0EfCsrbfmSGxntA" name="addressimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_3VKTsSfREfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNDC-0EfCsrbfmSGxntA" name="shippingimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_mTXxMifSEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNDS-0EfCsrbfmSGxntA" name="shippingimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_tOyOsifTEfCfEtKLCaYGcA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_OfmNDi-0EfCsrbfmSGxntA" name="shippingimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop-6.uml#_vKa08CfTEfCfEtKLCaYGcA"/>
+    </domainElements>
+  </domainModel>
+  <interactionFlowModelViewpoint id="_MOMbZDxHEfCj3On6uUPiiA" name="ViewOrderHistory" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+</core:IFMLModel>

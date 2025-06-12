@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_lIe6EMIGEe-dLb7Rw-1j8g">
+  <interactionFlowModel id="_Mc77csIIEe-dLb7Rw-1j8g">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_PPzEscIIEe-dLb7Rw-1j8g" name="Catalog">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_VB2i38IIEe-dLb7Rw-1j8g" name="Catalog Page">
+        <annotations text="/catalog"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="createOrderAuthorized.core#//@interactionFlowModel/@interactionFlowModelElements.0/@outputPorts.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_swRf-MIIEe-dLb7Rw-1j8g" name="Add Catalog">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_9F3EMAhaEfC4o_wZMpdzoA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_uB3qvsIIEe-dLb7Rw-1j8g" name="List Catalog">
+          <parameters xsi:type="ext:SimpleField" id="_iskxAsIJEe-dLb7Rw-1j8g" name="Search"/>
+          <viewElementEvents id="_AyuhqMIJEe-dLb7Rw-1j8g" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_q0bbgMJOEe-dLb7Rw-1j8g" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+              <parameterBindingGroup id="_r7CeQMJOEe-dLb7Rw-1j8g">
+                <parameterBindings id="_uMaD8MJOEe-dLb7Rw-1j8g" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_aE-pDcIJEe-dLb7Rw-1j8g" name="Catalog List Data" uniformResourceIdentifier="call/catalog/list">
+            <parameters id="_bTEz0sIJEe-dLb7Rw-1j8g" name="catalogId" direction="inout"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_X0kQIMIKEe-dLb7Rw-1j8g" name="pictureURL" featureConcept="//@domainModel/@domainElements.49"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_YY_L0MIKEe-dLb7Rw-1j8g" name="Name" featureConcept="//@domainModel/@domainElements.26"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Y5FoMMIKEe-dLb7Rw-1j8g" name="Price">
+              <annotations text="isCurrency"/>
+              <featureConcept href="catalogFilter.core#//@domainModel/@domainElements.48"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_aMyWr8IIEe-dLb7Rw-1j8g" name="Catalog Detail Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/catalog/:catalogId"/>
+        <viewElementEvents id="_u765wCNQEfCdW_H1NywOIw" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_1JOJgCNQEfCdW_H1NywOIw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_m1CqQMJNEe-dLb7Rw-1j8g" name="Catalog Detail">
+          <parameters id="_zbGy4MJNEe-dLb7Rw-1j8g" name="catalogId" direction="inout"/>
+          <viewElementEvents id="_roHScPGGEe-uNNfr9Yv8JQ" name="Add to Cart"/>
+          <viewElementEvents id="_dvKGoP8QEe-bvoi3XzdH9A" name="Buy Now"/>
+          <viewElementEvents id="_xUm5ICM0EfCdW_H1NywOIw" name="Edit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="editCatalog" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+              <parameterBindingGroup id="_l-gdEMMMEe-RLeGDC5kypA">
+                <parameterBindings id="_qxYWMMMMEe-RLeGDC5kypA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_8dqRMCM0EfCdW_H1NywOIw" name="Delete">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="navAfterDetailDeleteCatalog" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1">
+              <parameterBindingGroup id="_izeEcMMMEe-RLeGDC5kypA">
+                <parameterBindings id="_sqfM4MMMEe-RLeGDC5kypA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_34gyUMJNEe-dLb7Rw-1j8g" name="Catalog Detail Data" uniformResourceIdentifier="call/catalog/detail">
+            <parameters id="_7V44IMJNEe-dLb7Rw-1j8g" name="id" direction="inout"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__YkqcMJNEe-dLb7Rw-1j8g" name="pictureURL" featureConcept="//@domainModel/@domainElements.49"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_AHLc4MJOEe-dLb7Rw-1j8g" name="Name" featureConcept="//@domainModel/@domainElements.46"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_A2MfAMJOEe-dLb7Rw-1j8g" name="Price">
+              <annotations text="isCurrency"/>
+              <featureConcept href="order.core#//@domainModel/@domainElements.48"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_BsjfQMJOEe-dLb7Rw-1j8g" name="Description" featureConcept="//@domainModel/@domainElements.47"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Dbg7cMJOEe-dLb7Rw-1j8g" name="Stock">
+              <featureConcept href="orderSimplified.core#//@domainModel/@domainElements.51"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_YyQSoPF5Ee-uNNfr9Yv8JQ" name="Category" featureConcept="//@domainModel/@domainElements.51"/>
+          </viewComponentParts>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_XTi58MMLEe-RLeGDC5kypA" name="Confirm Delete Catalog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.3/@outInteractionFlows.0" isModal="true">
+          <viewElementEvents id="__OESQMMLEe-RLeGDC5kypA" name="Confirm Delete">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="navAfterWindowDelete" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <parameterBindingGroup id="_kb-TUMMMEe-RLeGDC5kypA">
+                <parameterBindings id="_sNfH0MMMEe-RLeGDC5kypA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLPort" id="_-pfhkMJOEe-dLb7Rw-1j8g" name="orderIn">
+        <portDefinition href="createOrderAuthorized.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_GaO_AMMBEe-RLeGDC5kypA" name="Add Catalog Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/catalog/add"/>
+        <viewElementEvents id="_BackFromAddtoCatalog" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_tnFjkMMCEe-RLeGDC5kypA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_YZhPEMMBEe-RLeGDC5kypA" name="Add Catalog Form">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_QlxwgMMCEe-RLeGDC5kypA" name="Add Catalog">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_6L084MMKEe-RLeGDC5kypA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_dhmjMMMBEe-RLeGDC5kypA" name="Name">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t62pkMMBEe-RLeGDC5kypA" name="name"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_hFqf0MMBEe-RLeGDC5kypA" name="Description">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_vHifIMMBEe-RLeGDC5kypA" name="description"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_kBnTkMMBEe-RLeGDC5kypA" name="Price">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_wtHV0MMBEe-RLeGDC5kypA" name="price"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_k6YHkMMBEe-RLeGDC5kypA" name="Available Stock">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_xhFwcMMBEe-RLeGDC5kypA" name="availableStock"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_r_5_0MMBEe-RLeGDC5kypA" name="Image">
+            <annotations text="File"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_yWgVgMMBEe-RLeGDC5kypA" name="pictureURL"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:DataBinding" id="_2Bf4MPFyEe-uNNfr9Yv8JQ" name="Category List Data" uniformResourceIdentifier="call/category/list">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_dc-kEPFzEe-uNNfr9Yv8JQ" name="Category">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_mh120PFzEe-uNNfr9Yv8JQ" name="categoryId" direction="out"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_qKL2gPFzEe-uNNfr9Yv8JQ" name="name"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_YPVi4MMCEe-RLeGDC5kypA" name="Edit Catalog Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0">
+        <annotations text="/catalog/edit?catalogId"/>
+        <viewElementEvents id="_eRq8IMMrEe-RLeGDC5kypA" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_g24q4MMrEe-RLeGDC5kypA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+            <parameterBindingGroup id="_jISs0MMrEe-RLeGDC5kypA">
+              <parameterBindings id="_VGZJQMM0Ee-RLeGDC5kypA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_bUlckMMCEe-RLeGDC5kypA" name="Edit Catalog Form">
+          <parameters id="_i7otgMMCEe-RLeGDC5kypA" name="catalogId" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_d-YJUMMCEe-RLeGDC5kypA" name="Save Catalog">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="beforeEditCatalog" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_5C4RcMMCEe-RLeGDC5kypA" name="Edit Catalog Data" uniformResourceIdentifier="call/catalog/detail">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_C3SKwMMDEe-RLeGDC5kypA" name="Name">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_KW5-AMMDEe-RLeGDC5kypA" name="name"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_EgKNEMMDEe-RLeGDC5kypA" name="Price">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_L6qPwMMDEe-RLeGDC5kypA" name="price"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_F_2eMMMDEe-RLeGDC5kypA" name="Available Stock">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_NoLhgMMDEe-RLeGDC5kypA" name="availableStock"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_HIVwQMMDEe-RLeGDC5kypA" name="Description">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_OxyN4MMDEe-RLeGDC5kypA" name="description"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_IasI8MMDEe-RLeGDC5kypA" name="Picture">
+              <annotations text="File"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_PscfUMMDEe-RLeGDC5kypA" name="pictureURL"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:DataBinding" id="_nWmBoPGAEe-uNNfr9Yv8JQ" name="Category List Data" uniformResourceIdentifier="call/category/list">
+              <subViewComponentParts xsi:type="ext:SelectionField" id="_rWWbwPGAEe-uNNfr9Yv8JQ" name="Category">
+                <subViewComponentParts xsi:type="ext:IFMLSlot" id="_yiG30PGAEe-uNNfr9Yv8JQ" name="categoryId" direction="out"/>
+                <subViewComponentParts xsi:type="ext:IFMLSlot" id="_DzpREPGBEe-uNNfr9Yv8JQ" name="name"/>
+              </subViewComponentParts>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_0cyaoMMDEe-RLeGDC5kypA" name="Delete Catalog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="_Ju0JoMMLEe-RLeGDC5kypA" name="catalogId"/>
+        <actionEvents id="_KSXGIMMMEe-RLeGDC5kypA" name="actionAfterDeleteCatalog">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="navAfterDelete" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_46QEcMMDEe-RLeGDC5kypA" name="Update Catalog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <parameters id="_dtZigMMMEe-RLeGDC5kypA" name="catalogId" direction="inout"/>
+        <actionEvents id="_avDiEMMMEe-RLeGDC5kypA" name="actionAfterUpdateCatalog">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="navAfterEdit" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+            <parameterBindingGroup id="_nK9pIMMMEe-RLeGDC5kypA">
+              <parameterBindings id="_rr9IEMMMEe-RLeGDC5kypA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0"/>
+              <parameterBindings id="_nnPCoCM5EfCdW_H1NywOIw" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_6DhZoMMDEe-RLeGDC5kypA" name="Save Catalog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_8OFIgMMKEe-RLeGDC5kypA" name="actionAfterSaveCatalog">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Eg-LwMMLEe-RLeGDC5kypA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLPort" id="_2BoqIMMuEe-RLeGDC5kypA" name="orderOut">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_4M7Vh8MxEe-RLeGDC5kypA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+      </interactionFlowModelElement>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_lIe6EcIGEe-dLb7Rw-1j8g">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lIx1AMIGEe-dLb7Rw-1j8g" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_Q_RvkH-sEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqMMIGEe-dLb7Rw-1j8g" name="status">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_dJzywH-sEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqMcIGEe-dLb7Rw-1j8g" name="orderId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_dJ22EH-sEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqMsIGEe-dLb7Rw-1j8g" name="date">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_fVJIQH-0Ee-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqM8IGEe-dLb7Rw-1j8g" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_nPr88H-0Ee-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqNMIGEe-dLb7Rw-1j8g" name="city">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_RjAOUJAsEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqNcIGEe-dLb7Rw-1j8g" name="street">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_YqToMJAsEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqNsIGEe-dLb7Rw-1j8g" name="state">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_cF-d0JAsEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqN8IGEe-dLb7Rw-1j8g" name="country">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_eLKosJAsEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqOMIGEe-dLb7Rw-1j8g" name="zipcode">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_gv0WwJAsEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lIzqOcIGEe-dLb7Rw-1j8g" name="quantity">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_sk4wkKQSEe-oCJ2cNtjQ4Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RQMIGEe-dLb7Rw-1j8g" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_LPYH8KQTEe-oCJ2cNtjQ4Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RQcIGEe-dLb7Rw-1j8g" name="customerimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_YnPzwI-VEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI0RQsIGEe-dLb7Rw-1j8g" name="calculateAmount">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_WLJPYKYrEe-GHaRarKRURg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI0RQ8IGEe-dLb7Rw-1j8g" name="getHistoryOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_JX4KULI2Ee-2CLW4Lsh_4A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI0RRMIGEe-dLb7Rw-1j8g" name="saveOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_0srX4LT5Ee-s1I9rb4EuKg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI0RRcIGEe-dLb7Rw-1j8g" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_jRlz4H-tEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RRsIGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_Ezm3QLIdEe-2CLW4Lsh_4A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI0RR8IGEe-dLb7Rw-1j8g" name="cancelOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_kVfg4H-tEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI0RSMIGEe-dLb7Rw-1j8g" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_EgTesH-yEe-7Ot3UKGYRTw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RScIGEe-dLb7Rw-1j8g" name="email">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_w5l2sJAsEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RSsIGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_CUXrcLCuEe-MF9Z8IziaYg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI0RS8IGEe-dLb7Rw-1j8g" name="getHistoryOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_SzDrULI2Ee-2CLW4Lsh_4A"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI0RTMIGEe-dLb7Rw-1j8g" name="CustomerImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_HhEn4I-TEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RTcIGEe-dLb7Rw-1j8g" name="customerId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_URke4I-TEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RTsIGEe-dLb7Rw-1j8g" name="email">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_XvUYII-TEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RT8IGEe-dLb7Rw-1j8g" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#__As-gKYpEe-GHaRarKRURg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI0RUMIGEe-dLb7Rw-1j8g" name="OrderImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_PGHfsJAtEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RUcIGEe-dLb7Rw-1j8g" name="street">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_TUfkoJAtEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI0RUsIGEe-dLb7Rw-1j8g" name="state">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_lZNuUJAtEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04UMIGEe-dLb7Rw-1j8g" name="country">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_oDXAYJAtEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04UcIGEe-dLb7Rw-1j8g" name="zipcode">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_qv--sJAtEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04UsIGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_AlHe8JAuEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04U8IGEe-dLb7Rw-1j8g" name="saveOrder">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_RPcxcKYrEe-GHaRarKRURg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI04VMIGEe-dLb7Rw-1j8g" name="CatalogImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_QT8KUGq1Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04VcIGEe-dLb7Rw-1j8g" name="brand">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_dzzowGq1Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04VsIGEe-dLb7Rw-1j8g" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_FhRAAmq3Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04V8IGEe-dLb7Rw-1j8g" name="getCatalogByBrand">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_WlwdwHu4Ee-uWsWjoWAEWw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04WMIGEe-dLb7Rw-1j8g" name="getBrands">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_1Lyy8Hu4Ee-uWsWjoWAEWw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04WcIGEe-dLb7Rw-1j8g" name="getCatalogByBrandAndCategory">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_oWkQIHu8Ee-uWsWjoWAEWw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI04WsIGEe-dLb7Rw-1j8g" name="CatalogImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#__VM0cGq4Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04W8IGEe-dLb7Rw-1j8g" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_OxHI0mq5Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04XMIGEe-dLb7Rw-1j8g" name="getCategories">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_CrxusGq5Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04XcIGEe-dLb7Rw-1j8g" name="getCatalogByCategory">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_o9MSoHu5Ee-uWsWjoWAEWw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI04XsIGEe-dLb7Rw-1j8g" name="CatalogImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_UvfzsGnFEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04X8IGEe-dLb7Rw-1j8g" name="catalogId">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_hyH8gGnFEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04YMIGEe-dLb7Rw-1j8g" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_q-4nAGnFEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04YcIGEe-dLb7Rw-1j8g" name="description">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_njRUYGnIEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04YsIGEe-dLb7Rw-1j8g" name="price">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_1cZAUGnIEe-1wPqnDEvaWA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04Y8IGEe-dLb7Rw-1j8g" name="pictureURL">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_5XZ1YGptEe-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04ZMIGEe-dLb7Rw-1j8g" name="availableStock">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_5MO1QGpvEe-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04ZcIGEe-dLb7Rw-1j8g" name="category">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_7KeDkGpvEe-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04ZsIGEe-dLb7Rw-1j8g" name="getCatalogByName">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_EvHB8KywEe-JferhozfoYw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_lI04Z8IGEe-dLb7Rw-1j8g" name="CatalogImpl">
+      <classifier xsi:type="uml:Class" href="../webshop-uml-dop.uml#_SewnMK0QEe-wF5dBEYJxtg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04aMIGEe-dLb7Rw-1j8g" name="getAllCurrency()">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_VFxFsK0QEe-wF5dBEYJxtg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_lI04acIGEe-dLb7Rw-1j8g" name="changeCurrency">
+      <behavioralFeature xsi:type="uml:Operation" href="../webshop-uml-dop.uml#_cwn4kK0QEe-wF5dBEYJxtg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04asIGEe-dLb7Rw-1j8g" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_FhRABWq3Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04a8IGEe-dLb7Rw-1j8g" name="catalogimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_OxHv4mq5Ee-XwtK5gtQ1OQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04bMIGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_YnQa0o-VEe-NtoM8QQR6hw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04bcIGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_AlJUIJAuEe-WXauyCNVCmw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04bsIGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_LPZWEKQTEe-oCJ2cNtjQ4Q"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04b8IGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_CUYSgrCuEe-MF9Z8IziaYg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_lI04cMIGEe-dLb7Rw-1j8g" name="orderimpl">
+      <structuralFeature xsi:type="uml:Property" href="../webshop-uml-dop.uml#_Ez7nYLIdEe-2CLW4Lsh_4A"/>
+    </domainElements>
+  </domainModel>
+  <interactionFlowModelViewpoint id="_ds3hlMMNEe-RLeGDC5kypA" name="SaveCatalog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+  <interactionFlowModelViewpoint id="_kqdKk_gaEe-M3coiPzcZEQ" name="UpdateCatalog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+  <interactionFlowModelViewpoint id="_8GxTlDxAEfCj3On6uUPiiA" name="DeleteCatalog" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.3"/>
+  <interactionFlowModelViewpoint id="_VqOs9D2EEfCCQe3qiMYzrQ" name="SaveCartItem" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0"/>
+  <interactionFlowModelViewpoint id="_6GLspD2EEfCCQe3qiMYzrQ" name="SaveOrder" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.1"/>
+</core:IFMLModel>
