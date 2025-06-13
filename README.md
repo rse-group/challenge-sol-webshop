@@ -5,10 +5,10 @@ This branch contains **generated source code** for different webshop products, b
 ## 🛍️ Subject Systems
 
 The generated products are based on:
-- **eShopOnContainers**
-- **Hipster Shop**
-- **Sock Shop**
-- **Stan’s Robot Shop**
+- [**eShopOnContainers**](https://github.com/dotnet-architecture/eShopOnContainers)
+- [**Hipster Shop**](https://github.com/dotnet-architecture/eShopOnContainers)
+- [**Sock Shop**](https://github.com/microservices-demo/microservices-demo)
+- [**Stan’s Robot Shop**](https://github.com/instana/robot-shop)
 
 Each product consists of:
 - **Backend source code** (based on VMJ)
