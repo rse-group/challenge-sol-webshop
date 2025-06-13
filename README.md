@@ -1,4 +1,4 @@
-# 🧩 WinVMJ Project
+# WinVMJ Project
 
 This branch contains the **WinVMJ project**, which represents the backend variability model for the **Webshop Product Line**.
 
