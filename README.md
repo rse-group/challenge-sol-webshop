@@ -1,8 +1,8 @@
-# ⚙️ Generated Products
+# Generated Products
 
 This branch contains **generated source code** for different webshop products, built using our solution tools.
 
-## 🛍️ Subject Systems
+## Subject Systems
 
 The generated products are based on:
 - [**eShopOnContainers**](https://github.com/dotnet-architecture/eShopOnContainers)
