@@ -1,10 +1,10 @@
-# 📄 SPLC 2025 Challenge-Solution Artifact
+# SPLC 2025 Challenge-Solution Artifact
 
 This repository contains the **artifact for our Challenge-Solution paper titled _"Re-Engineering Microservices into Web-Based Software Product Lines"_**.
 
 To keep things organized and clear, the artifacts are **separated by branch**, with each branch corresponding to a specific part or aspect of our solution.
 
-## 🗂️ Branch Structure
+## Branch Structure
 
 Each branch contains source code, datasets, documentation, or other resources relevant to a particular component of the artifact. Please refer to the branch descriptions below for more details:
 
