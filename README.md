@@ -6,7 +6,7 @@ This branch contains **generated source code** for different webshop products, b
 
 The generated products are based on:
 - [**eShopOnContainers**](https://github.com/dotnet-architecture/eShopOnContainers)
-- [**Hipster Shop**](https://github.com/dotnet-architecture/eShopOnContainers)
+- [**Hipster Shop**](https://github.com/GoogleCloudPlatform/microservices-demo)
 - [**Sock Shop**](https://github.com/microservices-demo/microservices-demo)
 - [**Stan’s Robot Shop**](https://github.com/instana/robot-shop)
 
